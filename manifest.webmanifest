@@ -1,0 +1,25 @@
+{
+  "id": "aura-music-app",
+  "name": "Aura - Ai Music Platform",
+  "short_name": "Aura",
+  "description": "A modern social platform for discovering, sharing, and promoting AI-generated and original music.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00FFA3",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

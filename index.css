@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[#0a0a0f] text-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-white\/3 {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+  .bg-white\/8 {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .bg-white\/12 {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .border-white\/8 {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Neon green glow for primary action buttons */
+  .neon-glow {
+    box-shadow: 0 0 18px rgba(0, 255, 163, 0.45), 0 0 6px rgba(0, 255, 163, 0.3);
+  }
+
+  /* Neon green text glow for active nav icons */
+  .neon-text {
+    text-shadow: 0 0 12px rgba(0, 255, 163, 0.6);
+  }
+
+  /* Hide scrollbars but keep scrolling */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Vertical snap feed for full-page video cards */
+  .snap-feed {
+    scroll-snap-type: y mandatory;
+  }
+  .snap-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
